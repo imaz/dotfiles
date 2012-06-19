@@ -26,10 +26,9 @@ set number
 "set list
 set expandtab
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,sjis,cp932,cp20932
-au BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
-"au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
-"au BufNewFile,BufRead *.rb set tabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.* set tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.tpl set filetype=html tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.* set tabstop=2 shiftwidth=2
 
    "ab   
 
