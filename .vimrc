@@ -18,6 +18,7 @@ syntax on
 highlight WhitespaceSOL ctermbg=black guibg=black
 highlight WhitespaceEOL ctermbg=red guibg=red
 highlight Tab ctermbg=yellow guibg=blue
+highlight NonText guifg=darkgreen
 match WhitespaceSOL /^\s\+/
 match WhitespaceEOL /\s\+$/
 match Tab /\t/
