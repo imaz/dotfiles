@@ -15,16 +15,12 @@
 "Vandle End
 
 syntax on
-highlight WhitespaceSOL ctermbg=black guibg=black
-highlight WhitespaceEOL ctermbg=red guibg=red
-highlight Tab ctermbg=yellow guibg=blue
 highlight NonText guifg=darkgreen
-match WhitespaceSOL /^\s\+/
+highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
-match Tab /\t/
 set autoindent
 set number
-"set list
+set list
 set expandtab
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,sjis,cp932,cp20932
 autocmd BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
