@@ -1,5 +1,5 @@
 [user]
-  name = IMAZU Asami 
+  name = IMAZU Asami
   email = neko.daisuki.070109@gmail.com
 [alias]
   a = add
@@ -7,9 +7,9 @@
   s = status
   c = commit
   co = checkout
-  l = log --oneline --decorate
+  l = log --oneline --decorate --graph
 [color]
   ui = auto
 [core]
   editor = /usr/bin/vim
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
