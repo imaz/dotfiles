@@ -15,7 +15,6 @@
   Plugin 'Shougo/unite.vim'
   Plugin 'Shougo/vimfiler'
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'tpope/vim-rails'
   Plugin 'pangloss/vim-javascript'
   Plugin 'osyo-manga/vim-over'
 
