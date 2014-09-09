@@ -1,24 +1,25 @@
 "Vandle Start
   set nocompatible
   filetype off
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
 
-  Bundle 'gmarik/vundle'
+  Plugin 'gmarik/Vundle.vim'
 
   "bundle xxx
-  Bundle 'kchmck/vim-coffee-script'
-  Bundle 'cakebaker/scss-syntax.vim'
-  Bundle 'tpope/vim-rails'
-  Bundle 'tpope/vim-markdown'
-  Bundle 'mattn/zencoding-vim'
-  Bundle 'Shougo/unite.vim'
-  Bundle 'Shougo/vimfiler'
-  Bundle 'scrooloose/nerdcommenter'
-  Bundle 'tpope/vim-rails'
-  Bundle 'pangloss/vim-javascript'
-  Bundle 'osyo-manga/vim-over'
+  Plugin 'kchmck/vim-coffee-script'
+  Plugin 'cakebaker/scss-syntax.vim'
+  Plugin 'tpope/vim-rails'
+  Plugin 'tpope/vim-markdown'
+  Plugin 'mattn/zencoding-vim'
+  Plugin 'Shougo/unite.vim'
+  Plugin 'Shougo/vimfiler'
+  Plugin 'scrooloose/nerdcommenter'
+  Plugin 'tpope/vim-rails'
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'osyo-manga/vim-over'
 
+  call vundle#end()
   filetype plugin indent on
 "Vandle End
 
