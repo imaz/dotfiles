@@ -5,7 +5,15 @@ autoload -U colors
 colors
 
 EXIT_PROMPT="%(?.%?.%{%B%}%K{red}%?%{%k%}%{%b%}"
-PROMPT="  %{${fg[green]}%}%{${reset_color}%} "
+
+precmd() {
+  if [ $? -eq 0 ]; then
+    PROMPT="  %{${fg[green]}%}%{${reset_color}%} "
+  else
+    PROMPT="  %{${fg[red]}%}%{${reset_color}%} "
+  fi
+}
+
 RPROMPT='[%~]$(vcs_info_with_color)$EXIT_PROMPT'
 
 # Aliases
