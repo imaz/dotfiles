@@ -31,6 +31,7 @@ set number
 set list
 set ruler
 set expandtab
+set hlsearch
 set fileformat=unix
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,sjis,cp932,cp20932
 autocmd BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
