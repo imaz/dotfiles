@@ -17,6 +17,7 @@
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'pangloss/vim-javascript'
   Plugin 'osyo-manga/vim-over'
+  Plugin 'rizzatti/dash.vim'
 
   call vundle#end()
   filetype plugin indent on
