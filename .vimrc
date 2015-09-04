@@ -18,6 +18,7 @@
   Plugin 'pangloss/vim-javascript'
   Plugin 'osyo-manga/vim-over'
   Plugin 'rizzatti/dash.vim'
+  Plugin 'TwitVim'
 
   call vundle#end()
   filetype plugin indent on
@@ -39,6 +40,10 @@ autocmd BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.tpl set filetype=html tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.* set tabstop=2 shiftwidth=2
 let NERDSpaceDelims = 1
+let twitvim_browser_cmd = 'open'
+let twitvim_force_ssl = 1
+let twitvim_count = 40
+let mapleader = ','
 nmap ,, <Plug>NERDCommenterToggle
 vmap ,, <Plug>NERDCommenterToggle
 
