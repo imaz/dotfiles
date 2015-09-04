@@ -24,7 +24,7 @@ alias l.='ls -dG .*'
 alias ll='ls -lG'
 alias ll.='ls -dlG .*'
 alias r='rails'
-alias rspec='rspec -cfs'
+alias rspec='rspec -cfd'
 alias format_json="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('/dev/stdin', 'utf8')), null, 2))\""
 alias cdgit='cd ~/src/`ghq list | percol`'
 
