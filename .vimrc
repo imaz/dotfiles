@@ -39,6 +39,7 @@ set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,sjis,cp932,cp20932
 autocmd BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.tpl set filetype=html tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.* set tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 let NERDSpaceDelims = 1
 let twitvim_browser_cmd = 'open'
 let twitvim_force_ssl = 1
