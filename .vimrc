@@ -17,6 +17,7 @@
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'pangloss/vim-javascript'
   Plugin 'osyo-manga/vim-over'
+  Plugin 'mustache/vim-mustache-handlebars'
   Plugin 'rizzatti/dash.vim'
   Plugin 'TwitVim'
 
