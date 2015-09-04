@@ -29,6 +29,7 @@ match WhitespaceEOL /\s\+$/
 set autoindent
 set number
 set list
+set ruler
 set expandtab
 set fileformat=unix
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,sjis,cp932,cp20932
