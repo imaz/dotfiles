@@ -11,7 +11,7 @@
   Plugin 'cakebaker/scss-syntax.vim'
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-markdown'
-  Plugin 'mattn/zencoding-vim'
+  Plugin 'mattn/emmet-vim'
   Plugin 'Shougo/unite.vim'
   Plugin 'Shougo/vimfiler'
   Plugin 'scrooloose/nerdcommenter'
