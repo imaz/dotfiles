@@ -141,6 +141,8 @@ PATH=$PATH:$GOPATH/bin
 export IEVMS_VERSIONS="8"
 ## Git
 export EDITOR=vim # not `vi`
+## Rust
+PATH=$PATH:/Users/imaz/.cargo/bin
 
 # Competition
 fpath=(`brew --prefix`/share/zsh/site-functions $fpath)
