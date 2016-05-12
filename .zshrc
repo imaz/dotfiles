@@ -24,9 +24,11 @@ alias l.='ls -dG .*'
 alias ll='ls -lG'
 alias ll.='ls -dlG .*'
 alias r='rails'
+alias e='ember'
 alias rspec='rspec -cfd'
 alias format_json="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('/dev/stdin', 'utf8')), null, 2))\""
 alias cdgit='cd ~/src/`ghq list | percol`'
+alias reload!='source ~/.zshrc'
 
 alias -g L="| less"
 alias -g V='| vi -R -'
