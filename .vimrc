@@ -9,6 +9,7 @@
   "bundle xxx
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'cakebaker/scss-syntax.vim'
+  Plugin 'slim-template/vim-slim.git'
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-markdown'
   Plugin 'mattn/emmet-vim'
