@@ -3,3 +3,6 @@ backup
 *.swp
 binstubs
 .sass-cache
+Procfile
+.envrc
+dump.rdb
