@@ -29,9 +29,7 @@ alias rspec='rspec -cfd'
 alias format_json="node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('/dev/stdin', 'utf8')), null, 2))\""
 alias cdgit='cd ~/src/`ghq list | percol`'
 alias reload!='source ~/.zshrc'
-
-alias -g L="| less"
-alias -g V='| vi -R -'
+alias less='less -qR'
 
 alias emoji='open http://www.emoji-cheat-sheet.com/'
 
@@ -143,6 +141,8 @@ export IEVMS_VERSIONS="8"
 export EDITOR=vim # not `vi`
 ## Rust
 PATH=$PATH:/Users/imaz/.cargo/bin
+
+PATH=/usr/local/bin:$PATH
 
 # Competition
 fpath=(`brew --prefix`/share/zsh/site-functions $fpath)

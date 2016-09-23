@@ -22,6 +22,7 @@
   Plugin 'rizzatti/dash.vim'
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'TwitVim'
+  Plugin 'thinca/vim-quickrun'
 
   call vundle#end()
   filetype plugin indent on
