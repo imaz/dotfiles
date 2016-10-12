@@ -6,3 +6,4 @@ binstubs
 Procfile
 .envrc
 dump.rdb
+.ruby-version
