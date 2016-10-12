@@ -150,9 +150,12 @@ zstyle ':completion:*:default' menu select=2
 if [ `brew --prefix zsh-completions 2> /dev/null` ]; then
   fpath=(`brew --prefix`/share/zsh-completions $fpath)
 fi
+
+# ghq
 if which ghq > /dev/null 2>&1; then
   fpath=($GOPATH/src/github.com/motemen/ghq/zsh $fpath)
 fi
+
 autoload -U compinit
 compinit
 
