@@ -54,6 +54,11 @@ let mapleader = ','
 nmap ,, <Plug>NERDCommenterToggle
 vmap ,, <Plug>NERDCommenterToggle
 
+" 勉強になったメモ
+" http://twitter.com/kana1/status/786252917678362624
+" ↓これ入れると<Esc>↑でAが挿入されたりしちゃう
+" nnoremap <Esc><Esc> :<C-u>noh<Return>
+
 " ctrlp
 let g:ctrlp_working_path_mode = 2
 nnoremap <silent> <D-t> :CtrlP<CR>
