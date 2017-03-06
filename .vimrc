@@ -1,33 +1,55 @@
-"Vandle Start
-  set nocompatible
-  filetype off
-  set rtp+=~/.vim/bundle/Vundle.vim
-  call vundle#begin()
+"NeoBundle Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
 
-  Plugin 'VundleVim/Vundle.vim'
+" Required:
+set runtimepath+=/Users/imaz/.vim/bundle/neobundle.vim/
 
-  "bundle xxx
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'cakebaker/scss-syntax.vim'
-  Plugin 'slim-template/vim-slim.git'
-  Plugin 'tpope/vim-rails'
-  Plugin 'tpope/vim-markdown'
-  Plugin 'mattn/emmet-vim'
-  Plugin 'Shougo/unite.vim'
-  Plugin 'Shougo/vimfiler'
-  Plugin 'scrooloose/nerdcommenter'
-  Plugin 'pangloss/vim-javascript'
-  Plugin 'mxw/vim-jsx'
-  Plugin 'osyo-manga/vim-over'
-  Plugin 'mustache/vim-mustache-handlebars'
-  Plugin 'rizzatti/dash.vim'
-  Plugin 'TwitVim'
-  Plugin 'thinca/vim-quickrun'
-  Plugin 'ctrlpvim/ctrlp.vim'
+" Required:
+call neobundle#begin(expand('/Users/imaz/.vim/bundle'))
 
-  call vundle#end()
-  filetype plugin indent on
-"Vandle End
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+" NeoBundle 'Shougo/neosnippet.vim'
+" NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
+NeoBundle 'TwitVim'
+NeoBundle 'cakebaker/scss-syntax.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'osyo-manga/vim-over'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'slim-template/vim-slim.git'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'tpope/vim-rails'
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
 syntax on
 highlight NonText guifg=darkgreen
@@ -46,6 +68,7 @@ autocmd BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.tpl set filetype=html tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.* set tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+let g:syntastic_javascript_checkers=['eslint']
 let NERDSpaceDelims = 1
 let twitvim_browser_cmd = 'open'
 let twitvim_force_ssl = 1
