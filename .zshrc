@@ -141,6 +141,10 @@ export IEVMS_VERSIONS="8"
 export EDITOR=vim # not `vi`
 ## Rust
 PATH=$PATH:/Users/imaz/.cargo/bin
+## Yarn
+# https://yarnpkg.com/en/docs/install に載っている方法だがこれだと通らない！
+# PATH="$PATH:$HOME/.yarn/bin"
+PATH="$PATH:`yarn global bin`"
 
 PATH=/usr/local/bin:$PATH
 
