@@ -24,6 +24,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'TwitVim'
 NeoBundle 'cakebaker/scss-syntax.vim'
+NeoBundle 'flowtype/vim-flow'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
@@ -97,3 +98,9 @@ let g:ctrlp_user_command = {
     \ },
     \ 'fallback': 'find %s -type f'
 \ }
+
+" vim-flow
+NeoBundleLazy 'flowtype/vim-flow', {
+            \ 'autoload': {
+            \     'filetypes': 'javascript'
+            \ }}
